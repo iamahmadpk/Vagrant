@@ -21,30 +21,30 @@ Now you have 3 VMs up and running
 
 vagrant ssh vm-name (eg. Vagrant ssh master) 
 
-Step4: Install docker on all virtual machines 
+# Step4: Install docker on all virtual machines 
 
-# Step4: Now on master Vm run the Following command on it so it behave as master/Leader node in Swarm Cluster 
+# Step5: Now on master Vm run the Following command on it so it behave as master/Leader node in Swarm Cluster 
 
 docker swarm init –advertise-addr private-ip 
 
-Now  
 
-# Step5: Run the following command on all slave node so they can join the swarm cluster as worker nodes 
+# Step6: Run the following command on all slave node so they can join the swarm cluster as worker nodes 
 
 docker swarm join –token <token> master-node-ap worker 
-# Step6: Download the docker-compose.yml file
 
-# Step7: Now Run following commands from the same directory where docker-compose.yml file exists 
+# Step7: Download the docker-compose.yml file
+
+# Step8: Now Run following commands from the same directory where docker-compose.yml file exists 
 
 docker stack deploy -c docker-compose.yml kasm  
 
-# Step8: Verify the setup by running following commands 
+# Step9: Verify the setup by running following commands 
 
 docker stack ls 
 
 docker services ls i 
 
-# Step9: Verify in browser 
+# Step10: Verify in browser 
 
 https://vm-ip:6901 
 
