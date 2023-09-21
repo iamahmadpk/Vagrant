@@ -1,6 +1,5 @@
 # Kasm Workspace Deployment Using Docker Swarm 
-**Task Details: ** 
-
+**Task Details:** 
 Create 3 virtual machines in VirtualBox using Vagrant. Deploy Kasm Workspace using Docker Swarm for multiple users.  
 
 **Perquisites:** Vagrant, VirtualBox, ubuntu/focal64 box 
