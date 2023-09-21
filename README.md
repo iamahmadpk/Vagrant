@@ -42,7 +42,7 @@ docker stack deploy -c docker-compose.yml kasm
 
 docker stack ls 
 
-docker services ls i 
+docker services ls
 
 # Step10: Verify in browser 
 
