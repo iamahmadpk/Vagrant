@@ -31,7 +31,8 @@ Now you have 3 VMs up and running
 **Run:** docker swarm join –token <token> master-node-ap worker 
  
  **Step7:** Verify using following command 
-**Run:** docker node ls 
+**Run:** 
+$$docker node ls 
 
 **Step8:** Download the docker-compose.yml file
 
