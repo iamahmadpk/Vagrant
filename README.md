@@ -14,6 +14,7 @@ Run: vagrant box add ubuntu/focal64
 # Step2: Run the following command from the same directory where vagrantfile is located. 
 
 vagrant up 
+
 Now you have 3 VMs up and running  
 
 # Step 3: ssh into all the virtual machines using following command  
