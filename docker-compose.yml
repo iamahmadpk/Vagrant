@@ -1,13 +1,52 @@
 version: '3.0'
 
 services:
-  kasm_app:
+  Shahbaz:
     image: kasmweb/ubuntu-focal-desktop:1.13.0
-    deploy:
-      replicas: 3
     shm_size: 512m
     ports:
       - "6901:6901"
     environment:
       - VNC_PW=password
+    deploy:
+      replicas: 1
 
+  Faisal:
+    image: kasmweb/ubuntu-focal-desktop:1.13.0
+    shm_size: 512m
+    ports:
+      - "6902:6901"
+    environment:
+      - VNC_PW=password
+    deploy:
+      replicas: 1
+
+  Ahmad:
+    image: kasmweb/ubuntu-focal-desktop:1.13.0
+    shm_size: 512m
+    ports:
+      - "6903:6901"
+    environment:
+      - VNC_PW=password
+    deploy:
+      replicas: 1
+
+  Daniyal:
+    image: kasmweb/ubuntu-focal-desktop:1.13.0
+    shm_size: 512m
+    ports:
+      - "6904:6901"
+    environment:
+      - VNC_PW=password
+    deploy:
+      replicas: 1
+
+  RanaAhmad:
+    image: kasmweb/ubuntu-focal-desktop:1.13.0
+    shm_size: 512m
+    ports:
+      - "6905:6901"
+    environment:
+      - VNC_PW=password
+    deploy:
+      replicas: 1
