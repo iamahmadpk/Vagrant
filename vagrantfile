@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
       vb.cpus = 2  #CPU as needed
     end
 
-    master.vm.network "private_network", ip: "custom-ip"  #IP for master
+    master.vm.network "private_network", ip: "192.168.56.10"  #IP for master
   end
 
   (1..2).each do |i|
@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
         vb.cpus = 2  #CPU as needed
       end
 
-      slave.vm.network "private_network", ip: "custom-ip#{i + 10}"  #IP for slaves
+      slave.vm.network "private_network", ip: "192.168.56.#{i + 10}"  #IP for slaves
     end
   end
 
